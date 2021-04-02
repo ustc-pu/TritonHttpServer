@@ -8,7 +8,7 @@ Every time the server reads in a full request, it will service that request and 
 
 After sending back one (or more) responses, the server will either close the connection (if instructed to do so by the client via the “Connection: close” header, described below, or after an appropriate timeout occurs. 
 
-Your web server will then continue waiting for future client connections. 
+The web server will then continue waiting for future client connections. 
 
 ## Usage
 Step 0:
