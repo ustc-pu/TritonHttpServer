@@ -1,4 +1,15 @@
 # TritonHTTP Web Server
+
+In this project, we built a simple web server that implements a subset of the HTTP/1.1 protocol called TritonHTTP.
+
+At a high level, a web server listens for connections on a socket (bound to a specific port on a host machine). Clients connect to this socket and use the TritonHTTP protocol to retrieve files from the server. The server will read data from the client, using the framing and parsing techniques. 
+
+Every time the server reads in a full request, it will service that request and send back a response back to the client. 
+
+After sending back one (or more) responses, the server will either close the connection (if instructed to do so by the client via the “Connection: close” header, described below, or after an appropriate timeout occurs. 
+
+Your web server will then continue waiting for future client connections. 
+
 ## Usage
 Step 0:
 You need to [install Go](https://golang.org/doc/install) to work with the assignment.
