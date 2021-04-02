@@ -11,11 +11,11 @@ After sending back one (or more) responses, the server will either close the con
 The web server will then continue waiting for future client connections. 
 
 ## Usage
-Step 0:
+- Step 0:
 You need to [install Go](https://golang.org/doc/install) to work with the assignment.
 
 
-Step 1:
+- Step 1:
 You need to add directory into ```.bash_profile``` (for OS X environment) or ```.bashrc``` to let the compiler knows where to find the dependencies
 ```
 	export PATH=$PATH:/usr/local/go/bin     # making sure go is on path
@@ -27,12 +27,10 @@ example:
 	export GOPATH=/[The directory you put this folder]/Project-1/
 	export PATH=$PATH:$GOPATH/bin
 ```
-
-^ you need to add these lines in your .bashrc file and 
-```source .bashrc``` to activate them.
+you need to add these lines in your .bashrc file and  ```source .bashrc``` to activate them.
 
 
-Step 2:
+- Step 2:
 When you run your code, we are currently using the run-server.sh script. It basically runs a immediate compilation and looks for dependency. You will encounter errors like:
 ```
 	cannot find package "github.com/go-ini/ini" in any of:
@@ -46,7 +44,7 @@ example:
 ```
 
 
-Step 3:
+- Step 3:
 Now, you should be able to run the script. 
 ```
 	run-server.sh [config_file]
@@ -87,4 +85,3 @@ For Simple testing : <br>
 2. Once the server is launched, test it's functionality using a browser, curl, netcat or a custom client.
 
 3. A directory `sample_htdocs` (populated with some sample files) has been provided in the starter code to help with testing. Verify the TritonHTTP server's functionality by accessing the files in this directory
-
